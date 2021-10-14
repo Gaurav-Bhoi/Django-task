@@ -1,0 +1,61 @@
+<link
+        href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"
+        rel="stylesheet"
+        id="bootstrap-css"
+        xmlns="http://www.w3.org/1999/html"/>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+  <div
+    id="loginbox"
+    style="margin-top: 50px"
+    class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"
+  >
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <div class="panel-title">Sign Up</div>
+      </div>
+
+      <div style="padding-top: 30px" class="panel-body">
+        <div
+          style="display: none"
+          id="login-alert"
+          class="alert alert-danger col-sm-12"
+        ></div>
+
+          <form action="sendotp" method="post">
+            <div style="margin-bottom: 25px" class="input-group">
+              <span class="input-group-addon"
+                ><i>Mobile No</i
+              ></span>
+              <input
+                id="login-username"
+                type="text"
+                class="form-control"
+                name="mobile_no"
+
+                placeholder="enter your mobile no"
+              />
+            </div>
+
+            <div style="margin-bottom: 25px" class="input-group">
+              <span class="input-group-addon"
+                ><i>Password</i
+              ></span>
+              <input
+                id="login-password"
+                type="password"
+                class="form-control"
+                name="password"
+                placeholder="password"
+              />
+            </div>
+          <button type="submit" href = 'urls.py' class="btn btn-primary">Signup</button>
+          </form>
+
+      </div>
+    </div>
+  </div>
+</div>

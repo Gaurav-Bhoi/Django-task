@@ -1,0 +1,121 @@
+<link
+        href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"
+        rel="stylesheet"
+        id="bootstrap-css"
+        xmlns="http://www.w3.org/1999/html"/>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+  <div
+    id="loginbox"
+    style="margin-top: 50px"
+    class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"
+  >
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <div class="panel-title">Profile Setup</div>
+      </div>
+
+      <div style="padding-top: 30px" class="panel-body">
+        <div
+          style="display: none"
+          id="login-alert"
+          class="alert alert-danger col-sm-12"
+        ></div>
+          <form action="uploadProfile" method="post">
+          <div style="margin-bottom: 25px" class="input-group">
+            <span class="input-group-addon"
+              ><i>Id</i
+            ></span>
+            <input
+              id="id1"
+              type="text"
+              name="id1"
+              value=""
+              placeholder="Enter your customer id"
+            />
+          </div>
+
+          <div style="margin-bottom: 25px" class="input-group">
+            <span class="input-group-addon"
+              ><i>Mobile No</i
+            ></span>
+            <input
+              id="MobileNO"
+              type="text"
+              name="mobileNo"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div style="margin-bottom: 25px" class="input-group">
+            <span class="input-group-addon"
+              ><i>DOB</i
+            ></span>
+            <input
+              id="DOB"
+              type="text"
+              name="dob"
+              value=""
+              placeholder="yyyy-mm-dd"
+            />
+          </div>
+
+          <div style="margin-bottom: 25px" class="input-group">
+            <span class="input-group-addon"
+              ><i>Email</i
+            ></span>
+            <input
+              id="email"
+              type="text"
+              name="email"
+              placeholder="abc@gmail.com"
+            />
+          </div>
+
+          <div style="margin-bottom: 25px" class="input-group">
+            <span class="input-group-addon"
+              ><i>Name</i
+            ></span>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div style="margin-bottom: 25px" class="input-group">
+            <span class="input-group-addon"
+              ><i>Status</i
+            ></span>
+            <input
+              id="status"
+              type="text"
+              name="status"
+              placeholder="only Y/N"
+            />
+          </div>
+
+          <div style="margin-bottom: 25px" class="input-group">
+            <span class="input-group-addon"
+              ><i>Upload your photo</i
+            ></span>
+            <input
+              id="img"
+              type="file"
+              name="img"
+              accept="image/*"
+            />
+          </div>
+            <button type="submit" name="Proceed_LogIn" href = 'urls.py' class="btn btn-primary">Upload Profile</button>
+          </form>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
